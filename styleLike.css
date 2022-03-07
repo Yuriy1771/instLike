@@ -22,7 +22,7 @@ body {
 
 #user {
     position: absolute;
-    top : 17%;
+    top : 40%;
     left:  5px;
 }
 
@@ -34,11 +34,12 @@ body {
 
 #instagramHert {
     position: absolute;
-    display: block;
+    display: none;
     width : 150px;
     left: 30%;
     top: 25%;
 }
+
 
 #likeBtn {
     position: absolute;
@@ -56,4 +57,10 @@ body {
     position: absolute;
     width: 30px;
     left: 20%;
+}
+
+#wholiked {
+    position: absolute;
+    top: 15%;
+    left: 5px;
 }
