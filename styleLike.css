@@ -13,12 +13,29 @@ body {
     border: 1px solid rgb(168, 168, 168);
     background-color: rgb(246, 255, 254);
     z-index: 11;
+    box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
 #instaLogo {
     position: absolute;
     width: 150px;
     left: 12%;
+}
+
+#search {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    background:url(pictureForProject/search_icon.png) no-repeat 4px 1px;
+    background-size: auto 80%;
+    padding: 0 30px;
+    box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
 #border {
@@ -28,6 +45,7 @@ body {
     width: 50%;
     height: 100%;
     border: 1px solid rgb(168, 168, 168);
+    box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
 #window {
@@ -37,6 +55,7 @@ body {
     height: 500px;
     border: 1px solid rgb(168, 168, 168);
     z-index: 3;
+    box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
 #windowTwo {
@@ -45,7 +64,7 @@ body {
     height: 80px;
     border: 1px solid rgb(168, 168, 168);
     margin:  -5% auto;
-
+    box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
 #user {
