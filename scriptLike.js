@@ -21,4 +21,4 @@ photoInst.ondblclick = () => {
     }else {
     imgLike.style.display = 'none';
     }
-}  
+}  ЖОПА 
