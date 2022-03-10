@@ -84,7 +84,6 @@ body, html{height:100%}
     width: 30%;
     height: 75%;
     border: 1px solid rgb(168, 168, 168);
-    z-index: 3;
     box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
@@ -151,7 +150,16 @@ body, html{height:100%}
     border-radius: 40%; 
 }
 
-#nameUser {
+#nickUser {
     position: relative;
     left: 40%;
+    font-size: 20px;
+}
+
+#nameUser{
+    position: relative;
+    left: 40%;
+    bottom: 2%;
+    font-size: 20px;
+    color: grey;
 }
