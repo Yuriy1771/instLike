@@ -1,11 +1,11 @@
 let imgLike = document.querySelector('#instagramHert');
-let photoInst = document.querySelector('#imgInWindow');
+let photoInst = document.querySelector('.imgInWindow');
 let likeBtn = document.querySelector('#likeBtn');
 
 
 let isPhotoClicked = false;
 
-photoInst.ondblclick     = () => {
+photoInst.ondblclick = () => {
     if(isPhotoClicked) {
         imgLike.style.display = 'none';
         likeBtn.style.background = 'none';
