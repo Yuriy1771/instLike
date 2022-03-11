@@ -41,6 +41,7 @@ function clickedToPhoto() {
     }
 }
 
+// добавление нового поста на сайт
 let addPost = document.querySelector('#addWindow');
 let addPost2 = document.querySelector('#addWindowTwo');
 
@@ -51,4 +52,46 @@ let close = document.querySelector('#close');
 
 btnAddPhoto.onclick = () => {
     modal.style.display = 'block';
+}
+
+close.onclick = () => {
+    modal.style.display = 'none';
+}
+
+window.onclick = (event) => {
+    if(event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
+
+let sendModal = document.querySelector('#inModalSend');
+let infoPost = document.querySelector('#infoPost');
+
+let postDescription;
+
+let err = document.querySelector('#error');
+
+sendModal.onclick = () => {
+        postDescription = document.querySelector('#textareaInModal').value; 
+        let validResult = validatePostDescription();
+        if(validResult != '') { //проверяю что validResult не пустой 
+            err.innerHTML = validResult;
+        } else {
+            modal.style.display = 'none';
+            addPost.style.display = 'block';
+            addPost2.style.display = 'block';
+        }
+}
+// Что делает - функция проверяет глобальную переменную Post..
+// Что принимает - пустож
+// что возвращает - 1.Пустоту в случае успеха
+//                  2.Текст ошибки в случае ошибки валидации
+function validatePostDescription() {
+    if(postDescription === '') {
+        return 'You not enter information about post!'
+    }
+    if(postDescription === 'Lox') {
+        return 'Сам ты лох!';
+    }
+    return '';
 }

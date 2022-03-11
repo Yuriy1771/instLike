@@ -202,6 +202,12 @@ body, html{height:100%}
     box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
+#infoPost {
+    position: absolute;
+    top : 40%;
+    left:  5px;
+}
+
 /* Создание модального окна */
 
 #modal {
@@ -216,6 +222,7 @@ body, html{height:100%}
 }
 
 #modal-content {
+    position: relative;
     width: 40%;
     height: 55%;
     border: 1px solid rgb(168, 168, 168);
@@ -225,8 +232,49 @@ body, html{height:100%}
 }
 
 #close {
-    float: right;
+    position: absolute;
+    left: 90%;
     color: grey;
     cursor: pointer;
     font-size: 35px;
+    padding: 10px;
+}
+
+#inModalTitle {
+    width:300px;
+    text-align: center;
+    margin: 5% auto;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+#textareaInModal {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    margin: 10% 30% auto;
+    font-size: 20px;
+}
+
+#inModalSend {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    margin: 42% 40% auto;
+    border: 1px solid rgb(168, 168, 168);
+    box-shadow: 0 0 5px rgb(168, 168, 168, .8);
+    background: #fff;
+    cursor: pointer;
+}
+
+#inModalSend:hover {
+    background:rgb(236, 236, 236);
+    transition: all ease-out .2s;
+}
+
+#error {
+    position: absolute;
+    width: 50%;
+    margin: 3% 25% auto;
+    text-align: center;
 }
