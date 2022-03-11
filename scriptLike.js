@@ -40,3 +40,15 @@ function clickedToPhoto() {
 
     }
 }
+
+let addPost = document.querySelector('#addWindow');
+let addPost2 = document.querySelector('#addWindowTwo');
+
+const btnAddPhoto = document.querySelector('#btnAddPhoto');
+
+let modal = document.querySelector('.myModal');
+let close = document.querySelector('#close');
+
+btnAddPhoto.onclick = () => {
+    modal.style.display = 'block';
+}
