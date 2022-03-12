@@ -126,7 +126,7 @@ body, html{height:100%}
     z-index: 1;
 }
 
-#instagramHert {
+.instagramHert {
     position: absolute;
     display: none;
     width : 150px;
@@ -277,4 +277,50 @@ body, html{height:100%}
     width: 50%;
     margin: 3% 25% auto;
     text-align: center;
+}
+
+/* добавленный пост */
+
+#addInstagramHert {
+    position: absolute;
+    display: none;
+    width : 150px;
+    left: 30%;
+    top: 25%;
+}
+
+#addImgInWindow {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#addLikeBtn {
+    position: absolute;
+    width: 8%;
+}
+
+#addShareBtn {
+    position: absolute;
+    width: 7%;
+    left: 20%;
+}
+
+#addCommentBtn {
+    position: absolute;
+    width: 7%;
+    left: 10%;
+    top: -2%;
+}
+
+#addWholiked {
+    position: absolute;
+    top: 15%;
+    left: 5px;
+}
+
+#addInfoPost {
+    position: absolute;
+    top : 40%;
+    left:  5px;
 }
