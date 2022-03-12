@@ -99,16 +99,16 @@ body, html{height:100%}
 .window {
     position: relative;
     margin: 5% auto;
-    width: 30%;
-    height: 75%;
+    width: 25%;
+    height: 65%;
     border: 1px solid rgb(168, 168, 168);
     box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
 .windowTwo {
     position: relative;
-    width : 30%;
-    height: 16%;
+    width : 25%;
+    height: 14%;
     border: 1px solid rgb(168, 168, 168);
     margin:  -5% auto;
     box-shadow: 0 0 5px rgb(168, 168, 168, .8);
@@ -185,9 +185,9 @@ body, html{height:100%}
 #addWindow {
     display: none;
     position: relative;
-    margin: 5% auto;
-    width: 30%;
-    height: 75%;
+    margin: 4% auto;
+    width: 25%;
+    height: 65%;
     border: 1px solid rgb(168, 168, 168);
     box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
@@ -195,10 +195,10 @@ body, html{height:100%}
 #addWindowTwo {
     display: none;
     position: relative;
-    width : 30%;
-    height: 16%;
+    width : 25%;
+    height: 14%;
     border: 1px solid rgb(168, 168, 168);
-    margin:  -5% auto;
+    margin:  -4% auto;
     box-shadow: 0 0 5px rgb(168, 168, 168, .8);
 }
 
