@@ -275,8 +275,14 @@ body, html{height:100%}
 #error {
     position: absolute;
     width: 50%;
-    margin: 3% 25% auto;
+    margin: 30% 25% auto;
     text-align: center;
+}
+
+#addNameUser {
+    position: absolute;
+    width: 20%;
+    margin: 2% 40% auto;
 }
 
 /* добавленный пост */

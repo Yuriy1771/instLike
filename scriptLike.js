@@ -54,15 +54,19 @@ window.onclick = (event) => {
     }
 }
 
+let addInfoPost = document.querySelector('#addInfoPost');
 let sendModal = document.querySelector('#inModalSend');
 let infoPost = document.querySelector('#infoPost');
 
 let postDescription;
+let addNameUser;
+
 
 let err = document.querySelector('#error');
 
 sendModal.onclick = () => {
-        postDescription = document.querySelector('#textareaInModal').value; 
+        postDescription = document.querySelector('#textareaInModal').value;
+        addNameUser = document.querySelector('#addNameUser').value;
         let validResult = validatePostDescription();
         if(validResult != '') { //проверяю что validResult не пустой 
             err.innerHTML = validResult;
@@ -70,6 +74,7 @@ sendModal.onclick = () => {
             modal.style.display = 'none';
             addPost.style.display = 'block';
             addPost2.style.display = 'block';
+            addInfoPost.innerHTML += addNameUser + ': ' + postDescription;
         }
 }
 // Что делает - функция проверяет глобальную переменную Post..
@@ -79,9 +84,8 @@ sendModal.onclick = () => {
 function validatePostDescription() {
     if(postDescription === '') {
         return 'You not enter information about post!'
-    }
-    if(postDescription === 'Lox') {
-        return 'Сам ты лох!';
+    } if(addNameUser === '') {
+        return 'You not enter user name!'
     }
     return '';
 }
