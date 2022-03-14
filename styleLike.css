@@ -50,7 +50,7 @@ body, html{height:100%}
     border-radius: 5px;
     box-shadow:0 0 5px rgb(168, 168, 168, .8);
     cursor: pointer;
-    background: rgb(246, 255, 254);
+    background: rgb(255, 255, 255);
 }
 
 #btnBackProfile:hover {
@@ -358,4 +358,8 @@ body, html{height:100%}
     color: rgb(63, 63, 63);
     box-shadow: 0 0 5px #000;
     transition: all ease-out .3s;
+}
+
+#subscriptionsPeople li img {
+    border-radius: 30%;
 }
