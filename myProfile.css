@@ -177,3 +177,11 @@ body {
     height: 20%;
     margin: 25% -15% auto;
 }
+
+.photosProfile {
+    position: relative;
+    width: 80%;
+    margin: 2px auto;
+    transform: translate( 12%, -50%);
+    top: 400px;
+}

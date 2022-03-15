@@ -26,3 +26,9 @@ save.onclick = () => {
     status1.innerHTML = textArea;
     modal.style.display = 'none';
 }
+
+const btnNews = document.querySelector('#btnNews');
+
+btnNews.onclick = () => {
+    document.location.href = 'index.HTML';
+}

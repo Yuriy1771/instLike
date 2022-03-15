@@ -89,3 +89,9 @@ function validatePostDescription() {
     }
     return '';
 }
+
+const btnBackProfile = document.querySelector('#btnBackProfile');
+
+btnBackProfile.onclick = () => {
+    document.location.href = 'myProfile.HTML';
+}
