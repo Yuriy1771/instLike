@@ -138,6 +138,7 @@ body, html{height:100%}
 #likeBtn {
     position: absolute;
     width: 8%;
+    cursor: pointer;
 }
 
 #commentBtn {

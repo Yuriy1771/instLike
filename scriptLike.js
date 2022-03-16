@@ -10,7 +10,7 @@ window1.ondblclick = () => {
     clickedToPhoto();
 }
 
- let wholiked;
+let wholiked;
 
 function checkLets() {
     wholiked = document.querySelector('#wholiked');
@@ -27,7 +27,21 @@ function clickedToPhoto() {
         likeBtn.style.background = 'red';
         wholiked.innerText += 'Yuriy';
         isPhotoClicked = true;
+        
+    }
+}
 
+// Работает, но не совсем понял принцип
+
+let isLikeBtn = false;
+
+likeBtn.onclick = () => {
+    if(isLikeBtn) {
+        likeBtn.style.background = '';
+        isLikeBtn = false;
+    }else {
+        likeBtn.style.background = 'red';
+        isLikeBtn = true;
     }
 }
 
