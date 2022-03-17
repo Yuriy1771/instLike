@@ -10,7 +10,7 @@ window1.ondblclick = () => {
     clickedToPhoto();
 }
 
-let wholiked;
+let wholiked = false;
 
 function checkLets() {
     wholiked = document.querySelector('#wholiked');
@@ -39,9 +39,12 @@ likeBtn.onclick = () => {
     if(isLikeBtn) {
         likeBtn.style.background = '';
         isLikeBtn = false;
+        wholiked = false;
     }else {
         likeBtn.style.background = 'red';
+        wholiked.innerText += 'Yuriy';
         isLikeBtn = true;
+        wholiked = true;
     }
 }
 

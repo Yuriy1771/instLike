@@ -32,3 +32,9 @@ const btnNews = document.querySelector('#btnNews');
 btnNews.onclick = () => {
     document.location.href = 'index.HTML';
 }
+
+const instaLogo = document.querySelector('#instaLogo');
+
+instaLogo.onclick = () => {
+    document.location.href = 'index.HTML';
+}

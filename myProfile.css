@@ -22,6 +22,7 @@ body {
     position: absolute;
     width: 150px;
     left: 12%;
+    cursor: pointer;
 }
 
 #search {
